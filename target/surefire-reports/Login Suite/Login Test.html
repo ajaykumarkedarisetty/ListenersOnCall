@@ -1,0 +1,146 @@
+<html>
+<head>
+<title>TestNG:  Login Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Login Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>3/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Feb 08 23:22:10 IST 2022</td>
+</tr>
+<tr><td>Total time:</td><td>42 seconds (42791 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.listenersoncall.tests.LoginTest.verifyLoginScreenFunctionality()'><b>verifyLoginScreenFunctionality</b><br>Test class: com.listenersoncall.tests.LoginTest<br/>
+<a href="#Output-1595362770" onClick='toggleBox("Output-1595362770", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1595362770" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1595362770">
+CLICK ON SIGNIN BUTTON<br/>
+Value Entered In Email Textbox=>JohnMilly.Test06@mailinator.com<br/>
+Value Entered In PASSWORD Textbox=>Listeners@1234<br/>
+Clicked On LOGIN Button.<br/>
+</div>
+</td>
+<td></td>
+<td>14</td>
+<td>com.listenersoncall.tests.LoginTest@fa49800</td></tr>
+<tr>
+<td title='com.listenersoncall.tests.LoginTest.verifyLoginScreenUI()'><b>verifyLoginScreenUI</b><br>Test class: com.listenersoncall.tests.LoginTest<br/>
+<a href="#Output-1816633311" onClick='toggleBox("Output-1816633311", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1816633311" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1816633311">
+CLICK ON SIGNIN BUTTON<br/>
+LISTENERS LOGO PRESENT<br/>
+VERFYING USERNAME LABEL, ACTUAL LABEL=>User Name<br/>
+VERFYING PASSWORD LABEL, ACTUAL LABEL=>Password<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>com.listenersoncall.tests.LoginTest@fa49800</td></tr>
+<tr>
+<td title='com.listenersoncall.tests.DashboardScreenTest.verifyDashboardScreenUIFunctionality()'><b>verifyDashboardScreenUIFunctionality</b><br>Test class: com.listenersoncall.tests.DashboardScreenTest<br/>
+<a href="#Output-1699637904" onClick='toggleBox("Output-1699637904", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1699637904" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1699637904">
+CLICK ON SIGNIN BUTTON<br/>
+Value Entered In Email Textbox=>JohnMilly.Test06@mailinator.com<br/>
+Value Entered In PASSWORD Textbox=>Listeners@1234<br/>
+Clicked On LOGIN Button.<br/>
+Verfying LET'S TALK ABOUT Text, ACTUAL TEXT=>Let's talk about...<br/>
+Verfying LET'S TALK ABOUT-'MORE' Text, ACTUAL TEXT=>MORE<br/>
+Verfying SUGGESTED LISTENERS Text, ACTUAL TEXT=>Suggested Listeners<br/>
+Verfying SUGGESTED LISTENERS-'EXPLORE' Text, ACTUAL TEXT=>EXPLORE<br/>
+Verfying MY RESOURCES Text, ACTUAL TEXT=>My Resources<br/>
+Verfying MY RESOURCES-'MORE' Text, ACTUAL TEXT=>MORE<br/>
+Verfying MY PROGRAM TEXT, ACTUAL Text=>My Program<br/>
+Verfying MY PROGRAM-'VISIT' Text, ACTUAL TEXT=>VISIT<br/>
+Records Displayed Uunder LETS TALK ABOUT Are=>4<br/>
+Records Displayed Under SUGGESTED LISTENERS Are=>2<br/>
+Records Displayed Under MY RESOURCES Are=>3<br/>
+Records Displayed Under MY PROGRAM Are=>1<br/>
+Verfying Following Side Menu Text, Actual Text==>Listeners ,Expected Text==>Listeners<br/>
+Verfying Following Side Menu Text, Actual Text==>Experiences ,Expected Text==>Experiences<br/>
+Verfying Following Side Menu Text, Actual Text==>Library ,Expected Text==>Library<br/>
+Verfying Following Side Menu Text, Actual Text==>My Profile ,Expected Text==>My Profile<br/>
+Verfying Following Side Menu Text, Actual Text==>My Preferences ,Expected Text==>My Preferences<br/>
+Verfying Following Side Menu Text, Actual Text==>My Program ,Expected Text==>My Program<br/>
+Verfying Following Side Menu Text, Actual Text==>Payment ,Expected Text==>Payment<br/>
+Verfying Following Side Menu Text, Actual Text==>Resources ,Expected Text==>Resources<br/>
+Verfying Following Side Menu Text, Actual Text==>Support ,Expected Text==>Support<br/>
+Verfying Following Side Menu Text, Actual Text==>About ,Expected Text==>About<br/>
+</div>
+</td>
+<td></td>
+<td>10</td>
+<td>com.listenersoncall.tests.DashboardScreenTest@74751b3</td></tr>
+</table><p>
+</body>
+</html>

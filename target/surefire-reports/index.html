@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Regression_Suite" class="navigator-link">
+              <span class="suite-name border-failed">Regression Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Regression_Suite" class="navigator-link ">
+                    <span>D:\Automation\Eclipse_Workspace\ListenersOnCall_Automation\src\test\resources\XmlSuits\userRegressionSuite.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Regression_Suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Regression_Suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Regression_Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Regression_Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Regression_Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Regression_Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">8 methods, 2 failed,   6 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Regression_Suite" class="hide-methods failed suite-Regression_Suite"> (hide)</a> <!-- hide-methods failed suite-Regression_Suite -->
+                      <a href="#" panel-name="suite-Regression_Suite" class="show-methods failed suite-Regression_Suite"> (show)</a> <!-- show-methods failed suite-Regression_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Regression_Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_Suite" title="com.listenersoncall.tests.UserDashboardPageTest" class="method navigator-link" hash-for-method="verifyDashboardUIFunctionality">verifyDashboardUIFunctionality</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_Suite" title="com.listenersoncall.tests.UserLoginTest" class="method navigator-link" hash-for-method="verifyValidLoginFunctionality">verifyValidLoginFunctionality</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Regression_Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Regression_Suite" class="hide-methods passed suite-Regression_Suite"> (hide)</a> <!-- hide-methods passed suite-Regression_Suite -->
+                      <a href="#" panel-name="suite-Regression_Suite" class="show-methods passed suite-Regression_Suite"> (show)</a> <!-- show-methods passed suite-Regression_Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Regression_Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_Suite" title="com.listenersoncall.tests.AdminLoginTest" class="method navigator-link" hash-for-method="verifyAdminLoginFunctionality">verifyAdminLoginFunctionality</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_Suite" title="com.listenersoncall.tests.AdminLoginTest" class="method navigator-link" hash-for-method="verifyAdminLoginScreenUI">verifyAdminLoginScreenUI</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_Suite" title="com.listenersoncall.tests.UserCreateNewAccountTest" class="method navigator-link" hash-for-method="verifyContinueAccountCreationFunctionality">verifyContinueAccountCreationFunctionality</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_Suite" title="com.listenersoncall.tests.UserCreateNewAccountTest" class="method navigator-link" hash-for-method="verifyEndAccountCreationFunctionality">verifyEndAccountCreationFunctionality</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_Suite" title="com.listenersoncall.tests.UserLoginTest" class="method navigator-link" hash-for-method="verifyLoginScreenUI">verifyLoginScreenUI</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_Suite" title="com.listenersoncall.tests.UserCreateNewAccountTest" class="method navigator-link" hash-for-method="verifyNewAccountCreationFunctionality">verifyNewAccountCreationFunctionality</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Regression_Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Regression_Suite" class="panel Regression_Suite">
+          <div class="suite-Regression_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.listenersoncall.tests.UserLoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyValidLoginFunctionality">
+                  </a> <!-- verifyValidLoginFunctionality -->
+                  <span class="method-name">verifyValidLoginFunctionality</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //div[@class=&apos;text-white w-full flex justify-end&apos;] (tried for 30 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.listenersoncall.utilities.WaitLibrary.waitForElementPresence(WaitLibrary.java:44)
+	at com.listenersoncall.pages.UserDashboardPage.verifyToolbarIsDisplayed(UserDashboardPage.java:48)
+	at com.listenersoncall.tests.UserLoginTest.verifyValidLoginFunctionality(UserLoginTest.java:56)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;text-white w-full flex justify-end&apos;]&quot;}
+  (Session info: chrome=98.0.4758.82)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;VTIPL-H-PC247-L&apos;, ip: &apos;192.168.55.105&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 98.0.4758.82, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: C:\Users\AJAYKU~2\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:54785}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d121474333394226731f171d780b5859
+*** Element info: {Using=xpath, value=//div[@class=&apos;text-white w-full flex justify-end&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:182)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:179)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 35 more
+... Removed 36 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Regression_Suite-class-failed -->
+          <div class="suite-Regression_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.listenersoncall.tests.UserDashboardPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyDashboardUIFunctionality">
+                  </a> <!-- verifyDashboardUIFunctionality -->
+                  <span class="method-name">verifyDashboardUIFunctionality</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //div[@class=&apos;text-white w-full flex justify-end&apos;] (tried for 30 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.listenersoncall.utilities.WaitLibrary.waitForElementPresence(WaitLibrary.java:44)
+	at com.listenersoncall.pages.UserDashboardPage.verifyToolbarIsDisplayed(UserDashboardPage.java:48)
+	at com.listenersoncall.tests.UserDashboardPageTest.verifyDashboardUIFunctionality(UserDashboardPageTest.java:41)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;text-white w-full flex justify-end&apos;]&quot;}
+  (Session info: chrome=98.0.4758.82)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;VTIPL-H-PC247-L&apos;, ip: &apos;192.168.55.105&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 98.0.4758.82, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: C:\Users\AJAYKU~2\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55003}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 11515acf2b1e9bdb85c18e4164d3e018
+*** Element info: {Using=xpath, value=//div[@class=&apos;text-white w-full flex justify-end&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:182)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:179)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 35 more
+... Removed 36 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Regression_Suite-class-failed -->
+          <div class="suite-Regression_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.listenersoncall.tests.UserLoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoginScreenUI">
+                  </a> <!-- verifyLoginScreenUI -->
+                  <span class="method-name">verifyLoginScreenUI</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Regression_Suite-class-passed -->
+          <div class="suite-Regression_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.listenersoncall.tests.UserCreateNewAccountTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyContinueAccountCreationFunctionality">
+                  </a> <!-- verifyContinueAccountCreationFunctionality -->
+                  <span class="method-name">verifyContinueAccountCreationFunctionality</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyEndAccountCreationFunctionality">
+                  </a> <!-- verifyEndAccountCreationFunctionality -->
+                  <span class="method-name">verifyEndAccountCreationFunctionality</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyNewAccountCreationFunctionality">
+                  </a> <!-- verifyNewAccountCreationFunctionality -->
+                  <span class="method-name">verifyNewAccountCreationFunctionality</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Regression_Suite-class-passed -->
+          <div class="suite-Regression_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.listenersoncall.tests.AdminLoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyAdminLoginFunctionality">
+                  </a> <!-- verifyAdminLoginFunctionality -->
+                  <span class="method-name">verifyAdminLoginFunctionality</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyAdminLoginScreenUI">
+                  </a> <!-- verifyAdminLoginScreenUI -->
+                  <span class="method-name">verifyAdminLoginScreenUI</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Regression_Suite-class-passed -->
+        </div> <!-- panel Regression_Suite -->
+        <div panel-name="test-xml-Regression_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">D:\Automation\Eclipse_Workspace\ListenersOnCall_Automation\src\test\resources\XmlSuits\userRegressionSuite.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Regression Suite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.listenersoncall.utilities.ListenersImplementation&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Regression Test&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.listenersoncall.tests.UserLoginTest&quot;/&gt;
+      &lt;class name=&quot;com.listenersoncall.tests.UserCreateNewAccountTest&quot;/&gt;
+      &lt;class name=&quot;com.listenersoncall.tests.UserDashboardPageTest&quot;/&gt;
+      &lt;class name=&quot;com.listenersoncall.tests.AdminLoginTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Regression Test --&gt;
+&lt;/suite&gt; &lt;!-- Regression Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Regression_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Regression Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Regression Test (4 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Regression_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Regression Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Regression_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Regression Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Regression_Suite');
+function tableData_Regression_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(8);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'verifyValidLoginFunctionality')
+data.setCell(0, 2, 'com.listenersoncall.tests.UserLoginTest')
+data.setCell(0, 3, 42336);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'verifyDashboardUIFunctionality')
+data.setCell(1, 2, 'com.listenersoncall.tests.UserDashboardPageTest')
+data.setCell(1, 3, 41631);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'verifyNewAccountCreationFunctionality')
+data.setCell(2, 2, 'com.listenersoncall.tests.UserCreateNewAccountTest')
+data.setCell(2, 3, 23960);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'verifyAdminLoginFunctionality')
+data.setCell(3, 2, 'com.listenersoncall.tests.AdminLoginTest')
+data.setCell(3, 3, 10457);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'verifyEndAccountCreationFunctionality')
+data.setCell(4, 2, 'com.listenersoncall.tests.UserCreateNewAccountTest')
+data.setCell(4, 3, 9458);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'verifyContinueAccountCreationFunctionality')
+data.setCell(5, 2, 'com.listenersoncall.tests.UserCreateNewAccountTest')
+data.setCell(5, 3, 6485);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'verifyLoginScreenUI')
+data.setCell(6, 2, 'com.listenersoncall.tests.UserLoginTest')
+data.setCell(6, 3, 2508);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'verifyAdminLoginScreenUI')
+data.setCell(7, 2, 'com.listenersoncall.tests.AdminLoginTest')
+data.setCell(7, 3, 2057);
+window.suiteTableData['Regression_Suite']= { tableData: data, tableDiv: 'times-div-Regression_Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <div id="times-div-Regression_Suite">
+              </div> <!-- times-div-Regression_Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Regression_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Regression Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifyAdminLoginScreenUI</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Verified 'USERNAME' Label, Actual Label=>Username</span>
+                <span class="reporter-method-output">Verified 'PASSWORD' Label, Actual Label=>Password</span>
+                <span class="reporter-method-output">Listeners Logo Is Displayed</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifyContinueAccountCreationFunctionality</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">CLICK ON CREATE ACCOUNT BUTTON, APPLICATION NAVIGATED TO CREATE ACCOUNT SCREEN.</span>
+                <span class="reporter-method-output">Clicked On Close Button.</span>
+                <span class="reporter-method-output">CAPTURE ALERT SCREEN SCREENSHOT</span>
+                <span class="reporter-method-output">Clicked On 'Continue Account Creation' Button.</span>
+                <span class="reporter-method-output">First Name Field Is Displayed</span>
+                <span class="reporter-method-output">Application Navigated to 'Create Account' Screen</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifyEndAccountCreationFunctionality</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">CLICK ON CREATE ACCOUNT BUTTON, APPLICATION NAVIGATED TO CREATE ACCOUNT SCREEN.</span>
+                <span class="reporter-method-output">Clicked On Close Button.</span>
+                <span class="reporter-method-output">Verified Alert Text, Actual Text=>Are you sure you want to end the account creation process? ,Expected Text=>Are you sure you want to end the account creation process?</span>
+                <span class="reporter-method-output">Clicked On 'End Account Creation' Button.</span>
+                <span class="reporter-method-output">Verfying LET'S TALK ABOUT Text, ACTUAL TEXT=>Let's talk about...</span>
+                <span class="reporter-method-output">Application Navigated to Dashboard Screen</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifyAdminLoginFunctionality</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Text Entered In UserName Field Is=>adi@listenersoncall.com</span>
+                <span class="reporter-method-output">Text Entered In Password Field Is=>Adiloc</span>
+                <span class="reporter-method-output">Clicked On SUBMIT Button.</span>
+                <span class="reporter-method-output">DashBoard Screen</span>
+                <span class="reporter-method-output">Clicked On 'LOG OUT' Button.</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifyLoginScreenUI</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">CLICK ON SIGNIN BUTTON, APPLICATION NAVIGATED TO SIGNIN SCREEN.</span>
+                <span class="reporter-method-output">VERFYING USERNAME LABEL, ACTUAL LABEL=>User Name ,EXPECTED LABEL=>User Name</span>
+                <span class="reporter-method-output">VERFYING PASSWORD LABEL, ACTUAL LABEL=>Password ,EXPECTED LABEL=>Password</span>
+                <span class="reporter-method-output">CAPTURED LOGIN PAGE SCREENSHOT</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifyNewAccountCreationFunctionality</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">CLICK ON CREATE ACCOUNT BUTTON, APPLICATION NAVIGATED TO CREATE ACCOUNT SCREEN.</span>
+                <span class="reporter-method-output">Value entered value in first name is=>John</span>
+                <span class="reporter-method-output">Value entered in Last name is=>Milly</span>
+                <span class="reporter-method-output">Value entered in Email is=>JohnMilly3289@mailinator.com</span>
+                <span class="reporter-method-output">Value entered in PhoneNumber is=>4842634691</span>
+                <span class="reporter-method-output">Selected GENDER Y=>male from GENDER Dropdown</span>
+                <span class="reporter-method-output">Clicked On Selected Date.</span>
+                <span class="reporter-method-output">Value entered in Date Of Birth Textbox=>2002-02-11</span>
+                <span class="reporter-method-output">Selected TimeZone As=>US/Eastern from TIMEZONE Dropdown</span>
+                <span class="reporter-method-output">Value entered in ZIPCODE is=>431638</span>
+                <span class="reporter-method-output">Value entered in PASSWORD Textbox is=>Listeners1234</span>
+                <span class="reporter-method-output">Value entered in CONFIRM PASSWORD Textbox is=>Listeners1234</span>
+                <span class="reporter-method-output">Clicked on NEXT button</span>
+                <span class="reporter-method-output">Clicked on TERMS ON CONDITIONS Radio Button</span>
+                <span class="reporter-method-output">Clicked on GET STARTED Button</span>
+                <span class="reporter-method-output">Verfying LET'S TALK ABOUT Text, ACTUAL TEXT=>Let's talk about...</span>
+                <span class="reporter-method-output">CAPTURED DASHBOARD SCREENSHOT</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifyDashboardUIFunctionality</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">CLICK ON SIGNIN BUTTON, APPLICATION NAVIGATED TO SIGNIN SCREEN.</span>
+                <span class="reporter-method-output">Value Entered In Email Textbox=>JohnMilly8386@mailinator.com</span>
+                <span class="reporter-method-output">Value Entered In PASSWORD Textbox=>Listeners1234</span>
+                <span class="reporter-method-output">Clicked On LOGIN Button.</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifyValidLoginFunctionality</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">CLICK ON SIGNIN BUTTON, APPLICATION NAVIGATED TO SIGNIN SCREEN.</span>
+                <span class="reporter-method-output">Value Entered In Email Textbox=>JohnMilly8386@mailinator.com</span>
+                <span class="reporter-method-output">Value Entered In PASSWORD Textbox=>Listeners1234</span>
+                <span class="reporter-method-output">Clicked On LOGIN Button.</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Regression_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Regression_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.listenersoncall.tests.UserLoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApplication</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyLoginScreenUI</span>
+                <span class="method-start">5911 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=verifyLoginScreenUI status=SUCCESS method=UserLoginTest.verifyLoginScreenUI()[pri:0...)</span>
+                <span class="method-start">8421 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApplication</span>
+                <span class="method-start">8707 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyValidLoginFunctionality</span>
+                <span class="method-start">14791 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=verifyValidLoginFunctionality status=FAILURE method=UserLoginTest.verifyValidLoginF...)</span>
+                <span class="method-start">57132 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.listenersoncall.tests.UserCreateNewAccountTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApplication</span>
+                <span class="method-start">57393 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyContinueAccountCreationFunctionality</span>
+                <span class="method-start">62610 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=verifyContinueAccountCreationFunctionality status=SUCCESS method=UserCreateNewAccou...)</span>
+                <span class="method-start">69095 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApplication</span>
+                <span class="method-start">69369 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyEndAccountCreationFunctionality</span>
+                <span class="method-start">76464 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=verifyEndAccountCreationFunctionality status=SUCCESS method=UserCreateNewAccountTes...)</span>
+                <span class="method-start">85923 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApplication</span>
+                <span class="method-start">90071 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyNewAccountCreationFunctionality</span>
+                <span class="method-start">96252 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=verifyNewAccountCreationFunctionality status=SUCCESS method=UserCreateNewAccountTes...)</span>
+                <span class="method-start">120213 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.listenersoncall.tests.UserDashboardPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApplication</span>
+                <span class="method-start">120417 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyDashboardUIFunctionality</span>
+                <span class="method-start">125649 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=verifyDashboardUIFunctionality status=FAILURE method=UserDashboardPageTest.verifyDa...)</span>
+                <span class="method-start">167282 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.listenersoncall.tests.AdminLoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApplication</span>
+                <span class="method-start">167603 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyAdminLoginFunctionality</span>
+                <span class="method-start">172745 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=verifyAdminLoginFunctionality status=SUCCESS method=AdminLoginTest.verifyAdminLogin...)</span>
+                <span class="method-start">183202 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">launchApplication</span>
+                <span class="method-start">183377 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyAdminLoginScreenUI</span>
+                <span class="method-start">187333 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=verifyAdminLoginScreenUI status=SUCCESS method=AdminLoginTest.verifyAdminLoginScree...)</span>
+                <span class="method-start">189391 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Guest CreateAccount Popup Suite">
+	<listeners>
+		<listener class-name="com.listenersoncall.utilities.ListenersImplementation"></listener>
+	</listeners>
+	<test name="Guest CreateAccount Popup Test">
+		<classes>
+			<class name="com.listenersoncall.tests.UserCreateAccountPopupDisplayFunctionality" />
+			<class name="com.listenersoncall.tests.UserCreateAccountPopupDisplayExperiencesScreen" />
+		</classes>
+	</test>
+</suite>

@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Regression Suite</th></tr>
+<tr><td><a href="#t0">Regression Test</a></td><td class="num">6</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">189,662</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Regression Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Regression Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.listenersoncall.tests.UserDashboardPageTest</td><td><a href="#m0">verifyDashboardUIFunctionality</a></td><td rowspan="1">1644555391349</td><td rowspan="1">41631</td></tr><tr class="failedodd"><td rowspan="1">com.listenersoncall.tests.UserLoginTest</td><td><a href="#m1">verifyValidLoginFunctionality</a></td><td rowspan="1">1644555280491</td><td rowspan="1">42336</td></tr><tr><th colspan="4">Regression Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">com.listenersoncall.tests.AdminLoginTest</td><td><a href="#m2">verifyAdminLoginFunctionality</a></td><td rowspan="1">1644555438445</td><td rowspan="1">10457</td></tr><tr class="passedeven"><td><a href="#m3">verifyAdminLoginScreenUI</a></td><td rowspan="1">1644555453033</td><td rowspan="1">2057</td></tr><tr class="passedodd"><td rowspan="3">com.listenersoncall.tests.UserCreateNewAccountTest</td><td><a href="#m4">verifyContinueAccountCreationFunctionality</a></td><td rowspan="1">1644555328310</td><td rowspan="1">6485</td></tr><tr class="passedodd"><td><a href="#m5">verifyEndAccountCreationFunctionality</a></td><td rowspan="1">1644555342164</td><td rowspan="1">9458</td></tr><tr class="passedodd"><td><a href="#m6">verifyNewAccountCreationFunctionality</a></td><td rowspan="1">1644555361952</td><td rowspan="1">23960</td></tr><tr class="passedeven"><td rowspan="1">com.listenersoncall.tests.UserLoginTest</td><td><a href="#m7">verifyLoginScreenUI</a></td><td rowspan="1">1644555271611</td><td rowspan="1">2508</td></tr></tbody>
+</table>
+<h2>Regression Test</h2><h3 id="m0">com.listenersoncall.tests.UserDashboardPageTest#verifyDashboardUIFunctionality</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">CLICK ON SIGNIN BUTTON, APPLICATION NAVIGATED TO SIGNIN SCREEN.<br/>Value Entered In Email Textbox=>JohnMilly8386@mailinator.com<br/>Value Entered In PASSWORD Textbox=>Listeners1234<br/>Clicked On LOGIN Button.</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //div[@class=&apos;text-white w-full flex justify-end&apos;] (tried for 30 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.listenersoncall.utilities.WaitLibrary.waitForElementPresence(WaitLibrary.java:44)
+	at com.listenersoncall.pages.UserDashboardPage.verifyToolbarIsDisplayed(UserDashboardPage.java:48)
+	at com.listenersoncall.tests.UserDashboardPageTest.verifyDashboardUIFunctionality(UserDashboardPageTest.java:41)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;text-white w-full flex justify-end&apos;]&quot;}
+  (Session info: chrome=98.0.4758.82)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;VTIPL-H-PC247-L&apos;, ip: &apos;192.168.55.105&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 98.0.4758.82, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: C:\Users\AJAYKU~2\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55003}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 11515acf2b1e9bdb85c18e4164d3e018
+*** Element info: {Using=xpath, value=//div[@class=&apos;text-white w-full flex justify-end&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:182)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:179)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 35 more
+... Removed 36 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.listenersoncall.tests.UserLoginTest#verifyValidLoginFunctionality</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">CLICK ON SIGNIN BUTTON, APPLICATION NAVIGATED TO SIGNIN SCREEN.<br/>Value Entered In Email Textbox=>JohnMilly8386@mailinator.com<br/>Value Entered In PASSWORD Textbox=>Listeners1234<br/>Clicked On LOGIN Button.</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //div[@class=&apos;text-white w-full flex justify-end&apos;] (tried for 30 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.listenersoncall.utilities.WaitLibrary.waitForElementPresence(WaitLibrary.java:44)
+	at com.listenersoncall.pages.UserDashboardPage.verifyToolbarIsDisplayed(UserDashboardPage.java:48)
+	at com.listenersoncall.tests.UserLoginTest.verifyValidLoginFunctionality(UserLoginTest.java:56)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;text-white w-full flex justify-end&apos;]&quot;}
+  (Session info: chrome=98.0.4758.82)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;VTIPL-H-PC247-L&apos;, ip: &apos;192.168.55.105&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 98.0.4758.82, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: C:\Users\AJAYKU~2\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:54785}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d121474333394226731f171d780b5859
+*** Element info: {Using=xpath, value=//div[@class=&apos;text-white w-full flex justify-end&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:182)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:179)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 35 more
+... Removed 36 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.listenersoncall.tests.AdminLoginTest#verifyAdminLoginFunctionality</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Text Entered In UserName Field Is=>adi@listenersoncall.com<br/>Text Entered In Password Field Is=>Adiloc<br/>Clicked On SUBMIT Button.<br/>DashBoard Screen<br/>Clicked On 'LOG OUT' Button.</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.listenersoncall.tests.AdminLoginTest#verifyAdminLoginScreenUI</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Verified 'USERNAME' Label, Actual Label=>Username<br/>Verified 'PASSWORD' Label, Actual Label=>Password<br/>Listeners Logo Is Displayed</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.listenersoncall.tests.UserCreateNewAccountTest#verifyContinueAccountCreationFunctionality</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">CLICK ON CREATE ACCOUNT BUTTON, APPLICATION NAVIGATED TO CREATE ACCOUNT SCREEN.<br/>Clicked On Close Button.<br/>CAPTURE ALERT SCREEN SCREENSHOT<br/>Clicked On 'Continue Account Creation' Button.<br/>First Name Field Is Displayed<br/>Application Navigated to 'Create Account' Screen</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.listenersoncall.tests.UserCreateNewAccountTest#verifyEndAccountCreationFunctionality</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">CLICK ON CREATE ACCOUNT BUTTON, APPLICATION NAVIGATED TO CREATE ACCOUNT SCREEN.<br/>Clicked On Close Button.<br/>Verified Alert Text, Actual Text=>Are you sure you want to end the account creation process? ,Expected Text=>Are you sure you want to end the account creation process?<br/>Clicked On 'End Account Creation' Button.<br/>Verfying LET'S TALK ABOUT Text, ACTUAL TEXT=>Let's talk about...<br/>Application Navigated to Dashboard Screen</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.listenersoncall.tests.UserCreateNewAccountTest#verifyNewAccountCreationFunctionality</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">CLICK ON CREATE ACCOUNT BUTTON, APPLICATION NAVIGATED TO CREATE ACCOUNT SCREEN.<br/>Value entered value in first name is=>John<br/>Value entered in Last name is=>Milly<br/>Value entered in Email is=>JohnMilly3289@mailinator.com<br/>Value entered in PhoneNumber is=>4842634691<br/>Selected GENDER Y=>male from GENDER Dropdown<br/>Clicked On Selected Date.<br/>Value entered in Date Of Birth Textbox=>2002-02-11<br/>Selected TimeZone As=>US/Eastern from TIMEZONE Dropdown<br/>Value entered in ZIPCODE is=>431638<br/>Value entered in PASSWORD Textbox is=>Listeners1234<br/>Value entered in CONFIRM PASSWORD Textbox is=>Listeners1234<br/>Clicked on NEXT button<br/>Clicked on TERMS ON CONDITIONS Radio Button<br/>Clicked on GET STARTED Button<br/>Verfying LET'S TALK ABOUT Text, ACTUAL TEXT=>Let's talk about...<br/>CAPTURED DASHBOARD SCREENSHOT</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">com.listenersoncall.tests.UserLoginTest#verifyLoginScreenUI</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">CLICK ON SIGNIN BUTTON, APPLICATION NAVIGATED TO SIGNIN SCREEN.<br/>VERFYING USERNAME LABEL, ACTUAL LABEL=>User Name ,EXPECTED LABEL=>User Name<br/>VERFYING PASSWORD LABEL, ACTUAL LABEL=>Password ,EXPECTED LABEL=>Password<br/>CAPTURED LOGIN PAGE SCREENSHOT</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

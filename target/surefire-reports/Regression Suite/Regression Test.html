@@ -1,0 +1,418 @@
+<html>
+<head>
+<title>TestNG:  Regression Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Regression Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>6/2/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Feb 11 10:24:25 IST 2022</td>
+</tr>
+<tr><td>Total time:</td><td>189 seconds (189662 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.listenersoncall.tests.UserDashboardPageTest.verifyDashboardUIFunctionality()'><b>verifyDashboardUIFunctionality</b><br>Test class: com.listenersoncall.tests.UserDashboardPageTest<br/>
+<a href="#Output-1487365582" onClick='toggleBox("Output-1487365582", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1487365582" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1487365582">
+CLICK ON SIGNIN BUTTON, APPLICATION NAVIGATED TO SIGNIN SCREEN.<br/>
+Value Entered In Email Textbox=>JohnMilly8386@mailinator.com<br/>
+Value Entered In PASSWORD Textbox=>Listeners1234<br/>
+Clicked On LOGIN Button.<br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //div[@class=&apos;text-white w-full flex justify-end&apos;] (tried for 30 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.listenersoncall.utilities.WaitLibrary.waitForElementPresence(WaitLibrary.java:44)
+	at com.listenersoncall.pages.UserDashboardPage.verifyToolbarIsDisplayed(UserDashboardPage.java:48)
+	at com.listenersoncall.tests.UserDashboardPageTest.verifyDashboardUIFunctionality(UserDashboardPageTest.java:41)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;text-white w-full flex justify-end&apos;]&quot;}
+  (Session info: chrome=98.0.4758.82)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;VTIPL-H-PC247-L&apos;, ip: &apos;192.168.55.105&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 98.0.4758.82, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: C:\Users\AJAYKU~2\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55003}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 11515acf2b1e9bdb85c18e4164d3e018
+*** Element info: {Using=xpath, value=//div[@class=&apos;text-white w-full flex justify-end&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:182)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:179)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 35 more
+... Removed 36 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1487365582", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1487365582'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //div[@class=&apos;text-white w-full flex justify-end&apos;] (tried for 30 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.listenersoncall.utilities.WaitLibrary.waitForElementPresence(WaitLibrary.java:44)
+	at com.listenersoncall.pages.UserDashboardPage.verifyToolbarIsDisplayed(UserDashboardPage.java:48)
+	at com.listenersoncall.tests.UserDashboardPageTest.verifyDashboardUIFunctionality(UserDashboardPageTest.java:41)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:808)
+	at org.testng.TestRunner.run(TestRunner.java:603)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.runSuites(TestNG.java:1092)
+	at org.testng.TestNG.run(TestNG.java:1060)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;text-white w-full flex justify-end&apos;]&quot;}
+  (Session info: chrome=98.0.4758.82)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;VTIPL-H-PC247-L&apos;, ip: &apos;192.168.55.105&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 98.0.4758.82, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: C:\Users\AJAYKU~2\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55003}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 11515acf2b1e9bdb85c18e4164d3e018
+*** Element info: {Using=xpath, value=//div[@class=&apos;text-white w-full flex justify-end&apos;]}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:182)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:179)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 35 more
+</pre></div></td>
+<td>41</td>
+<td>com.listenersoncall.tests.UserDashboardPageTest@53ce1329</td></tr>
+<tr>
+<td title='com.listenersoncall.tests.UserLoginTest.verifyValidLoginFunctionality()'><b>verifyValidLoginFunctionality</b><br>Test class: com.listenersoncall.tests.UserLoginTest<br/>
+<a href="#Output-752148842" onClick='toggleBox("Output-752148842", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-752148842" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-752148842">
+CLICK ON SIGNIN BUTTON, APPLICATION NAVIGATED TO SIGNIN SCREEN.<br/>
+Value Entered In Email Textbox=>JohnMilly8386@mailinator.com<br/>
+Value Entered In PASSWORD Textbox=>Listeners1234<br/>
+Clicked On LOGIN Button.<br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //div[@class=&apos;text-white w-full flex justify-end&apos;] (tried for 30 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.listenersoncall.utilities.WaitLibrary.waitForElementPresence(WaitLibrary.java:44)
+	at com.listenersoncall.pages.UserDashboardPage.verifyToolbarIsDisplayed(UserDashboardPage.java:48)
+	at com.listenersoncall.tests.UserLoginTest.verifyValidLoginFunctionality(UserLoginTest.java:56)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;text-white w-full flex justify-end&apos;]&quot;}
+  (Session info: chrome=98.0.4758.82)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;VTIPL-H-PC247-L&apos;, ip: &apos;192.168.55.105&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 98.0.4758.82, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: C:\Users\AJAYKU~2\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:54785}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d121474333394226731f171d780b5859
+*** Element info: {Using=xpath, value=//div[@class=&apos;text-white w-full flex justify-end&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:182)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:179)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 35 more
+... Removed 36 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace752148842", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace752148842'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //div[@class=&apos;text-white w-full flex justify-end&apos;] (tried for 30 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.listenersoncall.utilities.WaitLibrary.waitForElementPresence(WaitLibrary.java:44)
+	at com.listenersoncall.pages.UserDashboardPage.verifyToolbarIsDisplayed(UserDashboardPage.java:48)
+	at com.listenersoncall.tests.UserLoginTest.verifyValidLoginFunctionality(UserLoginTest.java:56)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:808)
+	at org.testng.TestRunner.run(TestRunner.java:603)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.runSuites(TestNG.java:1092)
+	at org.testng.TestNG.run(TestNG.java:1060)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;text-white w-full flex justify-end&apos;]&quot;}
+  (Session info: chrome=98.0.4758.82)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;VTIPL-H-PC247-L&apos;, ip: &apos;192.168.55.105&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 98.0.4758.82, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: C:\Users\AJAYKU~2\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:54785}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d121474333394226731f171d780b5859
+*** Element info: {Using=xpath, value=//div[@class=&apos;text-white w-full flex justify-end&apos;]}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:182)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:179)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 35 more
+</pre></div></td>
+<td>42</td>
+<td>com.listenersoncall.tests.UserLoginTest@22ef9844</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.listenersoncall.tests.AdminLoginTest.verifyAdminLoginScreenUI()'><b>verifyAdminLoginScreenUI</b><br>Test class: com.listenersoncall.tests.AdminLoginTest<br/>
+<a href="#Output-1280081260" onClick='toggleBox("Output-1280081260", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1280081260" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1280081260">
+Verified 'USERNAME' Label, Actual Label=>Username<br/>
+Verified 'PASSWORD' Label, Actual Label=>Password<br/>
+Listeners Logo Is Displayed<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>com.listenersoncall.tests.AdminLoginTest@316bcf94</td></tr>
+<tr>
+<td title='com.listenersoncall.tests.UserCreateNewAccountTest.verifyContinueAccountCreationFunctionality()'><b>verifyContinueAccountCreationFunctionality</b><br>Test class: com.listenersoncall.tests.UserCreateNewAccountTest<br/>
+<a href="#Output-1756587746" onClick='toggleBox("Output-1756587746", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1756587746" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1756587746">
+CLICK ON CREATE ACCOUNT BUTTON, APPLICATION NAVIGATED TO CREATE ACCOUNT SCREEN.<br/>
+Clicked On Close Button.<br/>
+CAPTURE ALERT SCREEN SCREENSHOT<br/>
+Clicked On 'Continue Account Creation' Button.<br/>
+First Name Field Is Displayed<br/>
+Application Navigated to 'Create Account' Screen<br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>com.listenersoncall.tests.UserCreateNewAccountTest@ffaa6af</td></tr>
+<tr>
+<td title='com.listenersoncall.tests.UserCreateNewAccountTest.verifyEndAccountCreationFunctionality()'><b>verifyEndAccountCreationFunctionality</b><br>Test class: com.listenersoncall.tests.UserCreateNewAccountTest<br/>
+<a href="#Output-2128310218" onClick='toggleBox("Output-2128310218", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2128310218" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2128310218">
+CLICK ON CREATE ACCOUNT BUTTON, APPLICATION NAVIGATED TO CREATE ACCOUNT SCREEN.<br/>
+Clicked On Close Button.<br/>
+Verified Alert Text, Actual Text=>Are you sure you want to end the account creation process? ,Expected Text=>Are you sure you want to end the account creation process?<br/>
+Clicked On 'End Account Creation' Button.<br/>
+Verfying LET'S TALK ABOUT Text, ACTUAL TEXT=>Let's talk about...<br/>
+Application Navigated to Dashboard Screen<br/>
+</div>
+</td>
+<td></td>
+<td>9</td>
+<td>com.listenersoncall.tests.UserCreateNewAccountTest@ffaa6af</td></tr>
+<tr>
+<td title='com.listenersoncall.tests.AdminLoginTest.verifyAdminLoginFunctionality()'><b>verifyAdminLoginFunctionality</b><br>Test class: com.listenersoncall.tests.AdminLoginTest<br/>
+<a href="#Output-1483522397" onClick='toggleBox("Output-1483522397", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1483522397" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1483522397">
+Text Entered In UserName Field Is=>adi@listenersoncall.com<br/>
+Text Entered In Password Field Is=>Adiloc<br/>
+Clicked On SUBMIT Button.<br/>
+DashBoard Screen<br/>
+Clicked On 'LOG OUT' Button.<br/>
+</div>
+</td>
+<td></td>
+<td>10</td>
+<td>com.listenersoncall.tests.AdminLoginTest@316bcf94</td></tr>
+<tr>
+<td title='com.listenersoncall.tests.UserLoginTest.verifyLoginScreenUI()'><b>verifyLoginScreenUI</b><br>Test class: com.listenersoncall.tests.UserLoginTest<br/>
+<a href="#Output-1681215776" onClick='toggleBox("Output-1681215776", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1681215776" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1681215776">
+CLICK ON SIGNIN BUTTON, APPLICATION NAVIGATED TO SIGNIN SCREEN.<br/>
+VERFYING USERNAME LABEL, ACTUAL LABEL=>User Name ,EXPECTED LABEL=>User Name<br/>
+VERFYING PASSWORD LABEL, ACTUAL LABEL=>Password ,EXPECTED LABEL=>Password<br/>
+CAPTURED LOGIN PAGE SCREENSHOT<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>com.listenersoncall.tests.UserLoginTest@22ef9844</td></tr>
+<tr>
+<td title='com.listenersoncall.tests.UserCreateNewAccountTest.verifyNewAccountCreationFunctionality()'><b>verifyNewAccountCreationFunctionality</b><br>Test class: com.listenersoncall.tests.UserCreateNewAccountTest<br/>
+<a href="#Output-2036497703" onClick='toggleBox("Output-2036497703", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2036497703" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2036497703">
+CLICK ON CREATE ACCOUNT BUTTON, APPLICATION NAVIGATED TO CREATE ACCOUNT SCREEN.<br/>
+Value entered value in first name is=>John<br/>
+Value entered in Last name is=>Milly<br/>
+Value entered in Email is=>JohnMilly3289@mailinator.com<br/>
+Value entered in PhoneNumber is=>4842634691<br/>
+Selected GENDER Y=>male from GENDER Dropdown<br/>
+Clicked On Selected Date.<br/>
+Value entered in Date Of Birth Textbox=>2002-02-11<br/>
+Selected TimeZone As=>US/Eastern from TIMEZONE Dropdown<br/>
+Value entered in ZIPCODE is=>431638<br/>
+Value entered in PASSWORD Textbox is=>Listeners1234<br/>
+Value entered in CONFIRM PASSWORD Textbox is=>Listeners1234<br/>
+Clicked on NEXT button<br/>
+Clicked on TERMS ON CONDITIONS Radio Button<br/>
+Clicked on GET STARTED Button<br/>
+Verfying LET'S TALK ABOUT Text, ACTUAL TEXT=>Let's talk about...<br/>
+CAPTURED DASHBOARD SCREENSHOT<br/>
+</div>
+</td>
+<td></td>
+<td>23</td>
+<td>com.listenersoncall.tests.UserCreateNewAccountTest@ffaa6af</td></tr>
+</table><p>
+</body>
+</html>
